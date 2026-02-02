@@ -15,8 +15,17 @@
     <main
       class="bg-neutral-blue-900 flex max-w-xs flex-col items-center justify-center rounded-2xl p-6"
     >
-      <img src="/image-equilibrium.jpg" alt="equilibrium" class="rounded-sm" />
-      <h1 class="self-start text-base leading-16 font-semibold text-white">
+      <div class="group relative cursor-pointer overflow-hidden rounded-sm">
+        <img src="/image-equilibrium.jpg" alt="equilibrium" />
+        <div
+          class="bg-primary-cyan-400/50 top-0 left-0 hidden h-full w-full items-center justify-center group-hover:absolute group-hover:flex"
+        >
+          <img src="/icon-view.svg" alt="" />
+        </div>
+      </div>
+      <h1
+        class="hover:text-primary-cyan-400 my-4.5 cursor-pointer self-start text-base font-semibold text-white"
+      >
         Equilibrium #3429
       </h1>
       <p class="text-primary-blue-500">
@@ -41,7 +50,9 @@
           alt="avatar"
         />
         <span class="text-primary-blue-500 mr-1 ml-3.5">Creation of</span>
-        <span class="text-white">Jules Wyvern</span>
+        <span class="hover:text-primary-cyan-400 cursor-pointer text-white"
+          >Jules Wyvern</span
+        >
       </div>
     </main>
   </body>
